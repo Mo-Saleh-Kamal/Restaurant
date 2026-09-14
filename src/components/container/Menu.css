@@ -1,0 +1,152 @@
+h4,
+.dollar {
+  color: var(--main-color);
+  font-weight: 500;
+}
+.burger h2 {
+  color: var(--text-color);
+}
+.burger .desc p {
+  color: var(--text-muted);
+}
+
+.burger img {
+  width: 100%;
+  height: 220px;
+  font-size: 10%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+.burger {
+  width: 280px;
+  padding: 15px;
+  background: var(--menu-color);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(36, 28, 18, 0.06);
+transition: 0.4s;
+}
+
+.burger:hover {
+  border: 1px solid var(--main-color);
+  transform: translateY(-10px);
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto 0;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= TABLET ================= */
+
+
+@media (max-width: 991px) {
+  .burger {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .burger img {
+    height: 200px;
+  }
+
+  .name h2 {
+    font-size: 18px;
+  }
+
+  .desc p {
+    font-size: 13px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 599px) {
+  #menu {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .burger {
+    width: 90%;
+    margin: auto;
+  }
+
+  .burger img {
+    height: 210px;
+  }
+
+  .name h2 {
+    font-size: 18px;
+  }
+
+  .dollar {
+    font-size: 14px;
+  }
+
+  .desc p {
+    font-size: 12px;
+  }
+
+  .burger .btn {
+    padding: 9px 12px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+  .burger {
+    width: 92%;
+  }
+
+  .burger img {
+    height: 180px;
+  }
+
+  .name h2 {
+    font-size: 16px;
+  }
+
+  .desc p {
+    font-size: 11px;
+  }
+}

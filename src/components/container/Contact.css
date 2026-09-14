@@ -1,0 +1,123 @@
+.contact {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 90px;
+  background: var(--menu-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 24px rgba(36, 28, 18, 0.06);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.contact-info {
+  flex: 1 1 260px;
+}
+
+.contact-info h3 {
+  color: var(--main-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info h1 {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.contact-info p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 26px;
+  max-width: 360px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.contact-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.contact-detail-text strong {
+  display: block;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.contact-detail-text span {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  padding: 12px 26px;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: var(--main-color-dim);
+}
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 30px;
+  }
+}
