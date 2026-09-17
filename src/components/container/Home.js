@@ -1,21 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import "./Home.css";
 import logo from "../../assets/wwwwwww-removebg-preview.png";
 import { FaShoppingCart } from "react-icons/fa";
@@ -35,7 +18,7 @@ const Home = () => {
     <>
       <section id="home">
         <header>
-          <img className="logo" src={logo} alt="Logo" />
+          <a href="#home"><img className="logo" src={logo} alt="Logo" /></a>
 
           <nav className={`nav-links ${menuOpen ? "show" : ""}`}>
             <a
